@@ -1,0 +1,13 @@
+a = int(input("a = "))
+b = int(input("b = "))
+c = int(input("c = "))
+
+discr = b**2 - 4*a*c
+print(discr)
+if discr < 0:
+    print("This equation doesnt have a solution")
+elif discr == 0:
+    print("x =", ((-1)*b + discr**0.5) / (2*a))
+else:
+    print("x_1 =", ((-1)*b + discr**0.5) / (2*a))
+    print("x_2 =", ((-1)*b - discr**0.5) / (2*a))
